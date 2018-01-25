@@ -13,9 +13,12 @@ class DockingStation
       @bikes.pop
   end
 
+  def full?
+    true if @bikes.size >= 20
+  end
 
   def dock(bike)
-    raise "Docking station is full" if @bikes.size >= 20
+    raise "Docking station is full" if full? 
     @bikes << bike
   end
 
