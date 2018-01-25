@@ -22,6 +22,12 @@ describe DockingStation do
     expect(subject).to be_full
   end
 
+  it { is_expected.to respond_to(:empty?)}
+
+  it "checks if the dock is empty" do
+    expect(subject).to be_empty
+  end
+
 end
 
 #Release bike no longer creates new bike
