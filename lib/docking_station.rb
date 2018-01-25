@@ -18,7 +18,7 @@ class DockingStation
     @bikes << bike
   end
 
-# private
+private
   def empty?
     true if @bikes.size == 0
   end
